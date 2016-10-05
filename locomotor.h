@@ -1,38 +1,42 @@
 #ifndef locomotor_h
 #define locomotor_h 2016
 #include<string>
+#include "robot_parts.h"
 using namespace std;
 
-class Locomotor {
+class Locomotor : public Robot_Parts {
 public:
-    Locomotor(string l_name, string l_description, int l_part, double l_weight, double l_cost, int speed):name(l_name),description(l_description),part_number(l_part),weight(l_weight),cost(l_cost), max_speed(speed){}
-
-    string get_loco_name(){
+    string get_name(){
         return name;
     }
-    string get_loco_description(){
+    string get_description(){
         return description;
     }
-    int get_loco_number(){
+    int get_part_number(){
         return part_number;
     }
-    double get_loco_weight(){
+    double get_weight(){
         return weight;
     }
-    double get_loco_cost(){
+    double get_cost(){
         return cost;
     }
     int power_consumed(){
+        return power;
+    }
+    void set_power_consumed(int p){
+        power = p;
+    }
+    double get_max_speed() {
         return max_speed;
     }
+    void set_max_speed(double p){
+        max_speed = p;
+    }
 
-private:
-    string name;
-    string description;
-    int part_number;
-    double weight;
-    double cost;
+protected:
     int max_speed;
+    int power;
 };
 
 #endif
