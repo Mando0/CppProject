@@ -35,7 +35,7 @@ public:
     void set_compartments(int c){
         battery_compartments = c;
     }
-    void get_torso_arm(Arm arms){
+    void set_torso_arm(Arm arms){
         arm.push_back(arms);
     }
     void get_torso_battery(Battery batteries){

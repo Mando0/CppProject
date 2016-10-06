@@ -1,11 +1,6 @@
 #ifndef robot_parts_h
 #define robot_parts_h 2016
 #include<string>
-/*#include "head.h"
-#include "arm.h"
-#include "battery.h"
-#include "locomotor.h"
-#include "torso.h"*/
 using namespace std;
 
 class Robot_Parts {

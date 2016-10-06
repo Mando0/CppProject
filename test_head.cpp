@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <string>
 #include "head.h"
 using namespace std;
@@ -14,5 +14,5 @@ int main() {
     h.set_cost(4.0);
     cout << h.get_name() << " " << h.get_description()<< " " << h.get_part_number() << " " << h.get_weight() << " " << h.get_cost() << endl;
     
-}
+}*/
 
