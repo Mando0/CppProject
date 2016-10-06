@@ -1,37 +1,35 @@
 #ifndef arm_h
 #define arm_h 2016
 #include<string>
+#include "robot_parts.h"
 using namespace std;
 
-class Arm {
+class Arm : public Robot_Parts {
 public:
-    Arm(string a_name, string a_description, int a_part, double a_weight, double a_cost, int a_speed):name(a_name),description(a_description),part_number(a_part),weight(a_weight),cost(a_cost),speed(a_speed){}
-    
-    string get_arm_name(){
+    string get_name(){
         return name;
     }
-    string get_arm_description(){
+    string get_description(){
         return description;
     }
-    int get_arm_number(){
+    int get_part_number(){
         return part_number;
     }
-    double get_arm_weight(){
+    double get_weight(){
         return weight;
     }
-    double get_arm_cost(){
+    double get_cost(){
         return cost;
     }
     int power_consumed(){
-        return speed;
+        return power;
     }
-private:
-    string name;
-    string description;
-    int part_number;
-    double weight;
-    double cost;
-    int speed;
+    void set_power_consumed(int s){
+        power = s;
+    }
+                                                                                                                   
+protected:
+    int power;
 };
 
 
