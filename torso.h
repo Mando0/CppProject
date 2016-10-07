@@ -38,20 +38,27 @@ public:
     void set_torso_arm(Arm arms){
         arm.push_back(arms);
     }
-    void get_torso_battery(Battery batteries){
+    Arm get_torso_arm(int arm_index) {
+        return arm[arm_index];
+    }
+    void set_torso_battery(Battery batteries){
         battery.push_back(batteries);
+    }
+    Battery get_torso_battery(int bat_index) {
+        return battery[bat_index];
     }
     Head get_torso_head(){
         return head;
     }
-   /* void get_torso_locomotor(){
+    Locomotor get_torso_locomotor(){
         return locomotor;
-    }*/
+    }
+    
 protected:
 
     int battery_compartments;
     Head head;
-    //Locomotor locomotor;
+    Locomotor locomotor;
     vector<Battery> battery;
     vector<Arm> arm;
 };
