@@ -21,7 +21,7 @@ int main() {
     t.set_cost(3);
     t.set_compartments(2);
     
-    Head h = t.get_torso_head() ;
+    Head h ;/*= t.get_torso_head() ;*/
     h.set_name("Head");
     h.set_description("first head");
     h.set_part_number(2);
@@ -60,11 +60,13 @@ int main() {
     t.set_torso_battery(b1);
     Battery b2 = t.get_torso_battery(0);
     
-    cout << t.get_name() << " "<< t.get_description()<< " " << t.get_part_number() << " " << t.get_weight() << " " << t.get_cost() << " " << t.get_compartments() << " " << h.get_name() << " " << h.get_description() << " " << h.get_part_number() << " " << h.get_weight() << " " << h.get_cost() << endl;
+    cout << t.get_name() << " "<< t.get_description()<< " " << t.get_part_number() << " " << t.get_weight() << " " << t.get_cost() << " " << t.get_compartments() << " " <<endl;
+    /* h.get_name() << " " << h.get_description() << " " << h.get_part_number() << " " << h.get_weight() << " " << h.get_cost() << endl;*/
+    cout << &h;
     
     cout << l.get_name() << " "<< l.get_description()<< " " << l.get_part_number() << " " << l.get_weight() << " " << l.get_cost() << " " << l.power_consumed() << " " << l.get_max_speed()<< endl;
     
-    cout << c.get_name() << " "<< c.get_description()<< " " << c.get_part_number() << " " << c.get_weight() << " " << c.get_cost() << " " << c.power_consumed()<< endl;
+   cout << c.get_name() << " "<< c.get_description()<< " " << c.get_part_number() << " " << c.get_weight() << " " << c.get_cost() << " " << c.power_consumed()<< endl;
     
     cout << b2.get_name() << " "<< b2.get_description()<< " " << b2.get_part_number() << " " << b2.get_weight() << " " << b2.get_cost() << " " << b2.get_energy()<< endl;
     
