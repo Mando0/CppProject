@@ -1,6 +1,9 @@
+#ifndef __ROBOT_MODEL_H
+#define __ROBOT_MODEL_H 2016
 #include <iostream>
 #include <string>
 #include <vector>
+//#include "view.h"
 using namespace std;
 
 class Robot_Model {
@@ -12,7 +15,10 @@ class Robot_Model {
     //vector<Robot_Part> robot_parts;
   public:
     Robot_Model(string rm_name, int rm_model_number, double rm_price, double rm_max_speed) :
-      name(rm_name), model_number(rm_model_number), price(rm_price), max_speed(rm_max_speed) {}
+      name(rm_name), model_number(rm_model_number), price(rm_price), max_speed(rm_max_speed) {
+        View view;
+        view.robot_model_create();
+      }
     double get_max_speed() {
       return max_speed;
     }
@@ -26,3 +32,5 @@ class Robot_Model {
       return model_number;
     }
 };
+
+#endif
