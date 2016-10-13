@@ -1,15 +1,13 @@
 #ifndef __SHOP_H
 #define __SHOP_H 2016
 #include <iostream>
-//#include "Robot_Model.h"
+#include "Robot_Model.h"
 #include <string>
 #include <vector>
 using namespace std;
 
 class Shop {
   public:
-    void test();
-    /*
     void create_model() {
       Robot_Model robot("robot", 1, 10.00, 100.00);
       robot_model.push_back(robot);
@@ -29,7 +27,6 @@ class Shop {
     }
   private:
     vector<Robot_Model> robot_model;
-    */
 };
 
 #endif

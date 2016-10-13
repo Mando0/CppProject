@@ -25,6 +25,32 @@ void Controller::execute_main_menu_cmd(int cmd) {
       cout << "Command? :";
       cin >> cmd;
       cin.ignore();
+      execute_create_model_cmd(cmd);
     }
   }
 }
+
+void Controller::execute_create_model_cmd(int cmd) {
+  // Command to create robot
+  if( cmd == 1) {
+    shop.create_model();
+    view.show_robot_model();
+  }
+  else if( cmd == 2) {
+    view.create_parts();
+    cout << "Command? : ";
+    cin >> cmd;
+    cin.ignore();
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

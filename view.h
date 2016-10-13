@@ -10,6 +10,8 @@ class View {
     View(Shop& sho) : shop(sho) { }
     void show_menu(); 
     void show_create();
+    void show_robot_model();
+    void create_parts();
   private:
     Shop& shop;
 };
