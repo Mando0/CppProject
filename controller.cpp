@@ -34,6 +34,8 @@ void Controller::execute_create_model_cmd(int cmd) {
   // Command to create robot
   if( cmd == 1) {
     shop.create_model();
+    shop.get_model_head_name();
+    shop.get_model_arm_name();
   }
   // Command to create parts
   else if( cmd == 2) {

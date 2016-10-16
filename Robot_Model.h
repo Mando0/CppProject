@@ -2,6 +2,7 @@
 #define __ROBOT_MODEL_H 2016
 #include "head.h"
 #include "arm.h"
+#include "locomotor.h"
 #include <iostream>
 #include <string>
 #include <vector>
@@ -12,6 +13,7 @@ class Robot_Model {
     string name;
     Head h;
     Arm a;
+    Locomotor l;
     int model_number;
     double price;
     double max_speed;
@@ -34,6 +36,12 @@ class Robot_Model {
     }
     void set_arm(Arm arm) {
       a = arm;
+    }
+    void get_head() {
+      cout << h.get_name() << endl;
+    }
+    void get_arm() {
+      cout << a.get_name() << endl;
     }
 };
 
