@@ -11,7 +11,8 @@ class View {
     void show_menu(); 
     void show_create();
     void show_robot_model();
-    void create_parts();
+    void create_parts_menu();
+    void part_list();
   private:
     Shop& shop;
 };

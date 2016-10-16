@@ -10,6 +10,7 @@ class Controller {
     void cli();
     void execute_main_menu_cmd(int cmd);
     void execute_create_model_cmd(int cmd);
+    void execute_create_parts_cmd(int cmd);
   private:
     Shop& shop;
     View view;

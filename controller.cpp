@@ -34,13 +34,32 @@ void Controller::execute_create_model_cmd(int cmd) {
   // Command to create robot
   if( cmd == 1) {
     shop.create_model();
-    view.show_robot_model();
   }
+  // Command to create parts
   else if( cmd == 2) {
-    view.create_parts();
+    view.create_parts_menu();
     cout << "Command? : ";
     cin >> cmd;
     cin.ignore();
+    execute_create_parts_cmd(cmd);
+  }
+  else if(cmd == 3) {
+    view.part_list();
+  }
+}
+
+void Controller::execute_create_parts_cmd(int cmd) {
+  if(cmd == 1) {
+    shop.create_head();
+  }
+  else if(cmd == 2) {
+    shop.create_arm();
+  }
+  else if(cmd == 3) {
+  }
+  else if(cmd == 4) {
+  }
+  else if(cmd == 5) {
   }
 }
 

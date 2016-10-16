@@ -16,6 +16,7 @@ void View::show_create() {
   cout << "-------------------" << endl;
   cout << "1 Robot Model      " << endl;
   cout << "2 Create Parts     " << endl;
+  cout << "3 Show Parts       " << endl;
   cout << "0 Quit to Main Menu" << endl;
   cout << endl << endl;
 }
@@ -27,7 +28,7 @@ void View::show_robot_model() {
   cout << endl;
 }
 
-void View::create_parts() {
+void View::create_parts_menu() {
   cout << "Which part to create?: " << endl;
   cout << "1 Head                 " << endl;
   cout << "2 Arm                  " << endl;
@@ -35,4 +36,8 @@ void View::create_parts() {
   cout << "4 Battery              " << endl;
   cout << "5 Locomotor            " << endl;
   cout << endl;
+}
+
+void View::part_list() {
+  shop.get_head_vector();
 }
