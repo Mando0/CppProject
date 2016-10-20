@@ -35,7 +35,7 @@ public:
     }
 
 protected:
-    int max_speed;
+    double max_speed;
     int power;
 };
 
