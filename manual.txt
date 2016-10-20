@@ -1,0 +1,5 @@
+To use this program first choose if you want to create parts or if you want to see what has been created. 
+You will have to create every type of part first before you can create a new robot model. Once you choose 
+a part to create, output on the screen will tell you the information to enter. Once all the parts have been
+created you can create a new robot model with the availble parts. Once Robot Model has been created you can 
+view under the Report menu and it will show what parts it is composed of.
