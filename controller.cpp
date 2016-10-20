@@ -28,6 +28,15 @@ void Controller::execute_main_menu_cmd(int cmd) {
       execute_create_model_cmd(cmd);
     }
   }
+  else if(cmd == 2) {
+    while(cmd != 0 ) {
+      view.show_parts();
+      cout << "Command?: ";
+      cin >> cmd;
+      cin.ignore();
+      execute_show_parts(cmd);
+    }
+  }
 }
 
 void Controller::execute_create_model_cmd(int cmd) {
@@ -58,14 +67,20 @@ void Controller::execute_create_parts_cmd(int cmd) {
     shop.create_arm();
   }
   else if(cmd == 3) {
+    shop.create_torso();
   }
   else if(cmd == 4) {
+    shop.create_battery();
   }
   else if(cmd == 5) {
+    shop.create_locomotor();
   }
 }
 
-
+void Controller::execute_show_parts(int cmd) {
+  if(cmd == 1) {
+  }
+}
 
 
 

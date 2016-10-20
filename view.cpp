@@ -4,10 +4,11 @@
 using namespace std;
 
 void View::show_menu() {
-  cout << "Main Menu " << endl;
-  cout << "----------" << endl;
-  cout << "1 (C)reate" << endl;
-  cout << "9 (Q)uit  " << endl;
+  cout << "Main Menu     " << endl;
+  cout << "--------------" << endl;
+  cout << "1 (C)reate    " << endl;
+  cout << "2 (L)ist Model" << endl;
+  cout << "9 (Q)uit      " << endl;
   cout << endl << endl;
 }
 
@@ -40,4 +41,9 @@ void View::create_parts_menu() {
 
 void View::part_list() {
   shop.get_head_vector();
+}
+
+void View::show_parts() {
+  cout << "Available Parts: " << endl;
+  shop.get_model_head_name();
 }
