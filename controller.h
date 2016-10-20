@@ -11,7 +11,9 @@ class Controller {
     void execute_main_menu_cmd(int cmd);
     void execute_create_model_cmd(int cmd);
     void execute_create_parts_cmd(int cmd);
-    void execute_show_parts(int cmd);
+    void execute_show_model(int cmd);
+    void execute_pick_model(int cmd);
+    void execute_show_report(int cmd);
   private:
     Shop& shop;
     View view;

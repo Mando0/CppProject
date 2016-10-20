@@ -3,7 +3,7 @@
 #include<string>
 #include"customer.h"
 #include"date.h"
-#incldue"status.h"
+#include"status.h"
 #include"sale_associate.h"
 using namespace std;
 

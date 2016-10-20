@@ -59,11 +59,20 @@ class Robot_Model {
     void set_torso(Torso torso) {
       t = torso;
     }
-    void get_head() {
-      cout << h.get_name() << endl;
+    string get_head() {
+      return h.get_name();
     }
-    void get_arm() {
-      cout << a.get_name() << endl;
+    string get_arm() {
+      return a.get_name();
+    }
+    string get_locomotor() {
+      return l.get_name();
+    }
+    string get_battery() {
+      return b.get_name();
+    }
+    string get_torso() {
+      return t.get_name();
     }
 };
 

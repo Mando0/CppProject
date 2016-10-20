@@ -7,17 +7,23 @@
 using namespace std;
 
 class Shop {
+  friend class View;
+  friend class Controller;
   public:
     string name;
     string description;
     int part_number;
     int weight;
+    int quantity;
     int cost;
     int power_consumed;
     int a_pick, b_pick, h_pick, l_pick, t_pick;
     int compartments;
     double max_speed;
     double energy;
+    void set_quantity(int q) {
+      quantity = q;
+    }
     void create_model() {
       Robot_Model model;
       cout << "Which Head part do you want to choose: " << endl;
